@@ -57,17 +57,43 @@ docker run --rm \
 ### 4.4. Iniciando ambiente
 
 ```bash
+./vendor/bin/sail build --no-cache
+```
+
+### 4.5. Iniciando ambiente
+
+```bash
 ./vendor/bin/sail up -d
 ```
 
-### 4.5. Aplicando migrates
+### 4.6. Aplicando migrates
 
 ```bash
-./vendor/bin/sail artisan migrate
+./vendor/bin/sail artisan migrate:fresh
 ```
 
-### 4.6. Iniciando o vite
+### 4.7. Iniciando o vite
+
+```bash
+./vendor/bin/sail npm install
+```
+
+### 4.7. Iniciando o vite
+
+```bash
+./vendor/bin/sail artisan key:generate
+```
+
+### 4.8. Iniciando o vite
 
 ```bash
 ./vendor/bin/sail npm run dev
 ```
+
+## 5. Acessando o projeto
+
+O projeto está localizando em:
+
+
+-   [Local Host](http://localhost)
+-   [127.0.0.1](http://127.0.0.1)
